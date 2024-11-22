@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #16166b;
+}
+
+/* .navbar {
+    background-color: #7a2d6e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+} */
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Buttons */
+.btn {
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Admin Dashboard Styles Start */
+/* Admin Dashboard Specific Styles */
+.admin-dashboard {
+    font-family: 'Quicksand', sans-serif;
+    background: #b59a43;
+    background: -moz-linear-gradient(-45deg, #DAD7CD 0%, #A3B18A 50%, #588157 100%);
+    background: -webkit-linear-gradient(-45deg, #DAD7CD 0%, #A3B18A 50%, #588157 100%);
+    background: linear-gradient(135deg, #DAD7CD 0%, #A3B18A 50%, #588157 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-dashboard .navbar {
+    background-color: #3a5a40;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.admin-dashboard .navbar h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.admin-dashboard .navbar-buttons {
+    margin-top: 20px;
+}
+
+.admin-dashboard .navbar-buttons button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #3a5a40; /* Green */
+    color: #e0edc5;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-dashboard .navbar-buttons button:hover {
+    background-color: #ffc1cf;
+    transform: scale(1.05);
+    color: #224c0b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard .navbar-buttons button:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.admin-dashboard .container {
+    background: #f1f7ee;
+   
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 80%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.admin-dashboard h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2E3D3E; /* Dark teal */
+    text-transform: uppercase;
+}
+
+.admin-dashboard table.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-dashboard table.styled-table th,
+.admin-dashboard table.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.admin-dashboard table.styled-table th {
+    background-color: #1d1e18; /* Dark teal */
+    color: #fff;
+    font-weight: 600;
+}
+
+.admin-dashboard table.styled-table tr {
+    border-bottom: 1px solid #f1f7ee;
+}
+
+.admin-dashboard table.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-dashboard table.styled-table tr:last-child {
+    border-bottom: 2px solid #1C3D3F;
+}
+
+.admin-dashboard table.styled-table tr:hover {
+    background-color: #ccfccb;
+}
+
+.admin-dashboard .fab-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #e4c5af;
+    color: rgb(34, 3, 3);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.admin-dashboard .fab-button:hover {
+    background-color: #ffb7c3;
+    transform: scale(1.1);
+}
+
+.admin-dashboard .fab-button:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.admin-dashboard .trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create flexible columns */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.admin-dashboard .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.admin-dashboard .card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.admin-dashboard .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Make sure image fills the space nicely */
+}
+
+.admin-dashboard .card-body {
+    padding: 15px;
+}
+
+.admin-dashboard .card-title {
+    font-size: 1.5rem;
+    color: #2F4F4F;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard .card-body p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard .card-body a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #77a6b6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-dashboard .card-body a:hover {
+    background-color: #5e8b99;
+}
+
+.admin-dashboard .card-body .btn-danger {
+    background-color: #D9534F;
+}
+
+.admin-dashboard .card-body .btn-danger:hover {
+    background-color: #c43e38;
+}
+
+
+
+/* Admin Dashboard Styles End */
+
+/*lOGIN start*/

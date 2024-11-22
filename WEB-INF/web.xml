@@ -1,0 +1,72 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- Servlet for LoginServlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for BookingProcessServlet -->
+    <servlet>
+        <servlet-name>BookingProcessServlet</servlet-name>
+        <servlet-class>BookingProcessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingProcessServlet</servlet-name>
+        <url-pattern>/BookingProcessServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for RegisterServlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for EditTripServlet -->
+    <servlet>
+        <servlet-name>EditTripServlet</servlet-name>
+        <servlet-class>EditTripServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditTripServlet</servlet-name>
+        <url-pattern>/EditTripServlet</url-pattern>
+    </servlet-mapping>
+
+      <!-- Servlet for BookingServlet -->
+  
+    <servlet>
+        <servlet-name>CreateBookingServlet</servlet-name>
+        <servlet-class>CreateBookingServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CreateBookingServlet</servlet-name>
+        <url-pattern>/CreateBookingServlet</url-pattern>
+    </servlet-mapping>
+     <!-- Servlet for EditBookingServlet -->
+    <servlet>
+        <servlet-name>EditBookingServlet</servlet-name>
+        <servlet-class>EditBookingServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>EditBookingServlet</servlet-name>
+        <url-pattern>/EditBookingServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
