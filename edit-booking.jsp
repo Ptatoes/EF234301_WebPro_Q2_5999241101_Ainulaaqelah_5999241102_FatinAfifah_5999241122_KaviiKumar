@@ -20,13 +20,14 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 0;
+            position: fixed; /* Changed to fixed to cover the entire viewport */
+             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+             height: 100%;
             background: rgba(165, 200, 165, 0.4);
             z-index: 1;
+             pointer-events: none; /* Ensures it doesn’t block interaction with other content */
         }
 
         .navbar {
